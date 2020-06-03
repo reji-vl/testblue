@@ -46,7 +46,7 @@ resource "azurerm_virtual_machine" "blue_machine"{
 	os_profile {
 		computer_name = "blueserver"
 		admin_username = "blueadmin"
-		admin_password = "Test@123"
+		admin_password = var.pass
 	}
 	
 	storage_os_disk { 
